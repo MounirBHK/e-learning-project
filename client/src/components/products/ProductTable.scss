@@ -1,0 +1,50 @@
+// styles.scss
+
+// Définir des variables pour les couleurs et les marges
+$background-color: #f0f0f0;
+$border-color: #ddd;
+$cell-padding: 10px;
+
+// Styles pour la table
+.table {
+  width: calc(100% - 20px * 2);
+  border-collapse: collapse;
+  margin: 20px;
+
+  // Style des cellules de l'en-tête de la table
+  thead {
+    th {
+      padding: $cell-padding;
+      border: 1px solid $border-color;
+      background-color: #333;
+      color: #fff;
+    }
+  }
+
+  // Style des cellules du corps de la table
+  tbody {
+    tr {
+      background-color: $background-color;
+
+      // Style pour les cellules ayant la classe "categorie"
+      &.categorie {
+        background-color: rgb(173, 163, 163) !important;
+      }
+    }
+
+    // Style des lignes impaires
+    tr:nth-child(odd) {
+      background-color: lighten($background-color, 5%);
+    }
+
+    // Style pour le survol de la ligne
+    tr:hover {
+      background-color: #e0e0e0;
+    }
+
+    td {
+      padding: $cell-padding;
+      border: 1px solid $border-color;
+    }
+  }
+}

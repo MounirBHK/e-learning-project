@@ -1,12 +1,13 @@
 import React from 'react'
 import Input from '../forms/Input'
 import Checkbox from '../forms/Checkbox'
+import './SearchBar.scss'
 
 
 export default function SearchBar({ search, setSearch, showStockedOnly, setShowStockedOnly }) {
 
     return (
-        <div>
+        <div className='searchBar-container'>
             <Input
                 placeholder='Effectuez une recherche...'
                 value={search}

@@ -1,6 +1,7 @@
 import React from 'react'
 import ProductCategoryRow from './ProductCategoryRow'
 import ProductRow from './ProductRow'
+import './ProductTable.scss'
 
 const formatRows = (products) => {
     const rows = []
@@ -31,13 +32,13 @@ export default function ProductTable({ products }) {
 
     return (
         <table className='table'>
-            <thead>
+            <thead className='header'>
                 <tr>
                     <th>Nom</th>
                     <th>Prix</th>
                 </tr>
             </thead>
-            <tbody>
+            <tbody className='body'>
                 {formattedRows}
             </tbody>
 
