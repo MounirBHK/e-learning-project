@@ -32,13 +32,13 @@ export default function ProductTable({ products }) {
 
     return (
         <table className='table'>
-            <thead className='header'>
+            <thead >
                 <tr>
                     <th>Nom</th>
                     <th>Prix</th>
                 </tr>
             </thead>
-            <tbody className='body'>
+            <tbody >
                 {formattedRows}
             </tbody>
 
