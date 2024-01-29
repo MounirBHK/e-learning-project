@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "cypress": "cypress open",
+    "db:reset": "your-reset-command",
+    "db:seed": "your-seed-command"
+  },
+  "devDependencies": {
+    "cypress": "^13.6.3"
+  }
+}
